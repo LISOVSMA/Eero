@@ -1,0 +1,28 @@
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+  font-size: 32px;
+  color: red;
+}
+========================================== */
+
+.icon-amazon-logo {
+  width: 3.2724609375em;
+}
+
+.icon-journal {
+  width: 11.6669921875em;
+}
+
+.icon-logo {
+  width: 2.18359375em;
+}
