@@ -19,57 +19,75 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__marketing">
-        <p>Free 2-day shipping | 30-day money back guarantee</p>
-      </div>
-      <div class="header__box">
-        <nav class="navigation">
-          <a href="#" class="navigation__logo">
-            <svg width="107" height="49">
-              <use href="./images/symbol-defs.svg#icon-logo"></use></svg
-          ></a>
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Products</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">How it works</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Technology</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">eero Secure</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Support</a>
-            </li>
-            <li class="navigation__item">
-              <a href="#" class="navigation__link">Find your system</a>
-            </li>
-          </ul>
-        </nav>
-        <button type="button" class="button header__button">Shop</button>
+      <div class="container">
+        <div class="header__marketing">
+          <p>Free 2-day shipping | 30-day money back guarantee</p>
+        </div>
+        <div class="header__box">
+          <nav class="navigation">
+            <a href="#" class="navigation__logo">
+              <svg width="107" height="49">
+                <use href="./images/symbol-defs.svg#icon-logo"></use></svg
+            ></a>
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Products</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">How it works</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Technology</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">eero Secure</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Support</a>
+              </li>
+              <li class="navigation__item">
+                <a href="#" class="navigation__link">Find your system</a>
+              </li>
+            </ul>
+          </nav>
+          <button type="button" class="button header__button">Shop</button>
+        </div>
       </div>
     </header>
     <main>
-      <section>
-        <h1>Wi-Fi 6 is here.</h1>
-        <p>The future of home wifi is fast.</p>
-        <button type="button">SHOP WIFI SOLUTIONS</button>
+      <section class="hero">
+        <div class="container">
+          <h1 class="hero__title">Wi-Fi 6 is here.</h1>
+          <p class="hero__text">The future of home wifi is fast.</p>
+          <button type="button" class="hero__button">
+            SHOP WIFI SOLUTIONS
+          </button>
+        </div>
       </section>
-      <section>
-        <p>Explore eero systems on</p>
-        <button type="button">Shop now</button>
-        <h2>More wifi for the devices in your connected home.</h2>
-        <p>
-          eero 6 systems use the power of Wi-Fi 6 to deliver faster speeds,
-          increase your internet’s efficiency, and reduce network congestion.
-          Say goodbye to dead spots and buffering with a connection that doesn’t
-          slow you down, even as you add more devices.
-        </p>
-        <button type="button">Find your eero system</button>
-        <img src="./images/house.jpg" alt="house" width="928" />
+      <section class="amazon">
+        <div class="container">
+          <p class="amazon__label">Explore eero systems on</p>
+          <svg width="108" height="33" class="amazon__icon">
+            <use href="./images/symbol-defs.svg#icon-amazon-logo"></use>
+          </svg>
+          <button type="button" class="amazon__button">Shop now</button>
+          <div class="amazon__thumb">
+            <h2 class="amazon__title">
+              More wifi for the devices in your connected home.
+            </h2>
+            <p class="amazon__text">
+              eero 6 systems use the power of Wi-Fi 6 to deliver faster speeds,
+              increase your internet’s efficiency, and reduce network
+              congestion. Say goodbye to dead spots and buffering with a
+              connection that doesn’t slow you down, even as you add more
+              devices.
+            </p>
+          </div>
+          <button type="button" class="button amazon__btn">
+            Find your eero system
+          </button>
+          <img src="./images/house.jpg" alt="house" width="928" />
+        </div>
       </section>
       <section>
         <ul>

@@ -7,10 +7,12 @@
 @import "./base/common";
 
 // components
+@import "./components/container";
 @import "./components/logo";
 @import "./components/buttons";
 
 // layuots
 @import "./layout/header";
+@import "./layout/amazon";
 @import "./layout/hero";
 @import "./layout/footer";
