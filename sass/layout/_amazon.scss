@@ -33,7 +33,6 @@
 .amazon__thumb {
   width: 736px;
   margin: 0 auto;
-  margin-bottom: 78px;
 }
 
 .amazon__title {
@@ -42,6 +41,7 @@
 }
 
 .amazon__text {
+  margin-bottom: 78px;
   @include font(400, 18px, 25px, null);
 }
 
