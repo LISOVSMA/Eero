@@ -1,0 +1,18 @@
+.journal {
+  padding-top: 200px;
+  padding-bottom: 205px;
+  background-color: var(--primary-text-color);
+}
+
+.journal__title {
+  width: 823px;
+  margin: 0 auto;
+  margin-bottom: 49px;
+  @include font(700, 42px, 48px, null);
+  color: var(--secondary-text-color);
+}
+
+.journal__icon {
+  display: block;
+  margin: 0 auto;
+}

@@ -1,8 +1,15 @@
 .features {
   padding-top: 580px;
   padding-bottom: 80px;
-  background-color: var(--button-text-color);
   color: var(--secondary-text-color);
+  background-color: var(--button-text-color);
+  background-image: url("../images/wifi.jpg");
+  @include retina {
+    background-image: url("../images/wifi@2x.jpg");
+  }
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .features__list {
@@ -69,7 +76,6 @@
 .features__button {
   display: block;
   margin: 0 auto;
-  margin-bottom: 80px;
   padding-bottom: 5px;
   @include font(400, 14px, 16px, null);
   background-color: transparent;

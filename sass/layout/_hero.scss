@@ -1,8 +1,22 @@
 .hero {
+  position: relative;
   padding-top: 120px;
   padding-bottom: 367px;
-  background-color: var(--hero-background-color);
   text-align: center;
+  background-image: url("../images/hero.jpg");
+  @include retina {
+    background-image: url("../images/hero@2x.jpg");
+  }
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: var(--hero-background-color);
+}
+
+.hero__image {
+  position: absolute;
+  bottom: -40px;
+  right: 50%;
+  transform: translateX(50%);
 }
 
 .hero__title {
