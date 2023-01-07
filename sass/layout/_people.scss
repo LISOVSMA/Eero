@@ -1,0 +1,65 @@
+.people {
+  padding-top: 117px;
+
+  &__title {
+    margin-bottom: 123px;
+    text-align: center;
+    @include font(400, 50px, 60px, null);
+  }
+
+  &__box {
+    display: flex;
+    gap: 80px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 34px;
+  }
+
+  &__button {
+    padding-bottom: 6px;
+    text-align: center;
+    @include font(400, 14px, 19px, null);
+    background-color: transparent;
+    color: var(--button-text-color);
+    border: none;
+    border-bottom: 2px solid var(--accent-btn-color);
+    transition: border-color 250ms var(--timing-function),
+      color 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+      color: var(--button-bg-color);
+      border-color: var(--button-bg-color);
+    }
+  }
+
+  &__text {
+    margin-bottom: 28px;
+    width: 540px;
+    @include font(400, 36px, 52px, null);
+  }
+
+  &__address {
+    @include font(400, 18px, 25px, null);
+    color: var(--overlay-color);
+    &--pos {
+      margin-bottom: 14px;
+    }
+  }
+
+  &__btn {
+    margin-top: 29px;
+    padding-top: 17px;
+    padding-right: 37px;
+    padding-bottom: 21px;
+    padding-left: 37px;
+    font-size: 13px;
+    transition: background-color 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
+}

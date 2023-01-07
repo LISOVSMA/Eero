@@ -4,33 +4,33 @@
   text-align: center;
   background-color: var(--secondary-background-color);
   color: var(--secondary-text-color);
-}
 
-.true-mesh__title {
-  margin-bottom: 44px;
-  @include font(400, 50px, 60px, null);
-}
-
-.true-mesh__text {
-  width: 710px;
-  margin: 0 auto;
-  margin-bottom: 38px;
-  @include font(400, 18px, 25px, null);
-}
-
-.true-mesh__button {
-  margin-bottom: 50px;
-  padding-top: 17px;
-  padding-right: 43px;
-  padding-bottom: 21px;
-  padding-left: 43px;
-  transition: background-color 250ms var(--timing-function);
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
+  &__title {
+    margin-bottom: 44px;
+    @include font(400, 50px, 60px, null);
   }
-}
 
-.true-mesh_image {
-  margin: 0 auto;
+  &__text {
+    width: 710px;
+    margin: 0 auto;
+    margin-bottom: 38px;
+    @include font(400, 18px, 25px, null);
+  }
+
+  &__button {
+    margin-bottom: 50px;
+    padding-top: 17px;
+    padding-right: 43px;
+    padding-bottom: 21px;
+    padding-left: 43px;
+    transition: background-color 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
+
+  &_image {
+    margin: 0 auto;
+  }
 }

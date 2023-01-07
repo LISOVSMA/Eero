@@ -1,48 +1,50 @@
-.header__marketing {
-  background-color: var(--secondary-background-color);
-  color: var(--secondary-text-color);
-  text-align: center;
-  @include font(400, 14px, 23px, 0.10998px);
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
+.header {
+  &__marketing {
+    background-color: var(--secondary-background-color);
+    color: var(--secondary-text-color);
+    text-align: center;
+    @include font(400, 14px, 23px, 0.10998px);
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 
-.header__box {
-  @include flex-align;
-}
+  &__box {
+    @include flex-align;
+  }
 
-.header__button {
-  margin-left: auto;
-  padding: 28px 64px;
-  @include font(400, 14px, 25px, 0.10998px);
-  transition: background-color 250ms var(--timing-function);
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
+  &__button {
+    margin-left: auto;
+    padding: 28px 64px;
+    @include font(400, 14px, 25px, 0.10998px);
+    transition: background-color 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
   }
 }
 
 .navigation {
   @include flex-align;
-}
 
-.navigation__logo {
-  padding: 0 36px;
-}
+  &__logo {
+    padding: 0 36px;
+  }
 
-.navigation__list {
-  @include flex-align;
-  gap: 37px;
-  margin-left: 195px;
-}
+  &__list {
+    @include flex-align;
+    gap: 37px;
+    margin-left: 195px;
+  }
 
-.navigation__link {
-  padding-top: 30px;
-  padding-bottom: 25px;
-  @include font(400, 18px, 25px, 0.10998px);
-  transition: color 250ms var(--timing-function);
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
+  &__link {
+    padding-top: 30px;
+    padding-bottom: 25px;
+    @include font(400, 18px, 25px, 0.10998px);
+    transition: color 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
 }

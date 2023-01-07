@@ -1,59 +1,59 @@
 .amazon {
   padding-top: 110px;
   text-align: center;
-}
 
-.amazon__label {
-  margin-bottom: 21px;
-  @include font(400, 18px, 21px, null);
-}
-
-.amazon__icon {
-  margin-bottom: 27px;
-}
-
-.amazon__button {
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 116px;
-  padding-bottom: 5px;
-  @include font(400, 14px, 16px, null);
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid var(--primary-text-color);
-  transition: border-color 250ms var(--timing-function),
-    color 250ms var(--timing-function);
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-    border-color: var(--accent-color);
+  &__label {
+    margin-bottom: 21px;
+    @include font(400, 18px, 21px, null);
   }
-}
 
-.amazon__thumb {
-  width: 736px;
-  margin: 0 auto;
-}
+  &__icon {
+    margin-bottom: 27px;
+  }
 
-.amazon__title {
-  margin-bottom: 44px;
-  @include font(400, 50px, 60px, null);
-}
+  &__button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 116px;
+    padding-bottom: 5px;
+    @include font(400, 14px, 16px, null);
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid var(--primary-text-color);
+    transition: border-color 250ms var(--timing-function),
+      color 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      border-color: var(--accent-color);
+    }
+  }
 
-.amazon__text {
-  margin-bottom: 78px;
-  @include font(400, 18px, 25px, null);
-}
+  &__thumb {
+    width: 736px;
+    margin: 0 auto;
+  }
 
-.amazon__btn {
-  padding-top: 17px;
-  padding-bottom: 21px;
-  padding-left: 37px;
-  padding-right: 37px;
-  @include font(400, 14px, 14px, 0.11px);
-  transition: background-color 250ms var(--timing-function);
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
+  &__title {
+    margin-bottom: 44px;
+    @include font(400, 50px, 60px, null);
+  }
+
+  &__text {
+    margin-bottom: 78px;
+    @include font(400, 18px, 25px, null);
+  }
+
+  &__btn {
+    padding-top: 17px;
+    padding-bottom: 21px;
+    padding-left: 37px;
+    padding-right: 37px;
+    font-weight: 400;
+    transition: background-color 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
   }
 }

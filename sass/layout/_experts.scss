@@ -1,0 +1,47 @@
+.experts {
+  padding-top: 117px;
+  padding-bottom: 120px;
+
+  & > .container {
+    padding-right: 240px;
+    padding-left: 240px;
+  }
+
+  &__title {
+    margin-bottom: 35px;
+    text-align: center;
+    @include font(400, 50px, 60px, null);
+  }
+
+  &__text {
+    margin-bottom: 44px;
+    text-align: center;
+    @include font(400, 18px, 25px, null);
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 95px;
+    padding-top: 17px;
+    padding-right: 66px;
+    padding-bottom: 21px;
+    padding-left: 66px;
+    font-size: 13px;
+    transition: background-color 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__box {
+    @include flex-align-justify;
+    gap: 18px;
+  }
+}

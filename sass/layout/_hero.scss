@@ -10,41 +10,41 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-color: var(--hero-background-color);
-}
 
-.hero__image {
-  position: absolute;
-  bottom: -40px;
-  right: 50%;
-  transform: translateX(50%);
-}
+  &__image {
+    position: absolute;
+    bottom: -40px;
+    right: 50%;
+    transform: translateX(50%);
+  }
 
-.hero__title {
-  margin-bottom: 24px;
-  @include font(400, 72px, 80px, null);
-  color: var(--secondary-text-color);
-}
+  &__title {
+    margin-bottom: 24px;
+    @include font(400, 72px, 80px, null);
+    color: var(--secondary-text-color);
+  }
 
-.hero__text {
-  margin-bottom: 16px;
-  @include font(400, 21px, 29px, null);
-  color: var(--secondary-text-color);
-}
+  &__text {
+    margin-bottom: 16px;
+    @include font(400, 21px, 29px, null);
+    color: var(--secondary-text-color);
+  }
 
-.hero__button {
-  padding-top: 16px;
-  padding-bottom: 21px;
-  padding-left: 37px;
-  padding-right: 37px;
-  @include font(400, 14px, 14px, 0.11px);
-  color: var(--secondary-text-color);
-  background-color: transparent;
-  border: 1px solid var(--primary-background-color);
-  transition: border-color 250ms var(--timing-function),
-    color 250ms var(--timing-function);
-  &:hover,
-  &:focus {
-    border-color: var(--accent-color);
-    color: var(--accent-color);
+  &__button {
+    padding-top: 16px;
+    padding-bottom: 21px;
+    padding-left: 37px;
+    padding-right: 37px;
+    @include font(400, 14px, 14px, 0.11px);
+    color: var(--secondary-text-color);
+    background-color: transparent;
+    border: 1px solid var(--primary-background-color);
+    transition: border-color 250ms var(--timing-function),
+      color 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+      border-color: var(--accent-color);
+      color: var(--accent-color);
+    }
   }
 }

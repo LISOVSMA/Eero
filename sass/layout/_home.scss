@@ -2,22 +2,22 @@
   padding-top: 135px;
   padding-bottom: 120px;
   text-align: center;
-}
 
-.home_title {
-  width: 782px;
-  margin: 0 auto;
-  margin-bottom: 44px;
-  @include font(400, 50px, 60px, null);
-}
+  &__title {
+    width: 782px;
+    margin: 0 auto;
+    margin-bottom: 44px;
+    @include font(400, 50px, 60px, null);
+  }
 
-.home_text {
-  width: 707px;
-  margin: 0 auto;
-  margin-bottom: 78px;
-  @include font(400, 18px, 25px, null);
-}
+  &__text {
+    width: 707px;
+    margin: 0 auto;
+    margin-bottom: 78px;
+    @include font(400, 18px, 25px, null);
+  }
 
-.home_image {
-  margin: 0 auto;
+  &__image {
+    margin: 0 auto;
+  }
 }
