@@ -93,8 +93,15 @@
             <button type="button" class="button amazon__btn">
               Find your eero system
             </button>
-            <img src="./images/house.jpg" alt="house" width="928" />
           </div>
+          <img
+            srcset="./images/house.jpg 1x, ./images/house@2x.jpg 2x"
+            src="./images/house.jpg"
+            alt="house"
+            width="928"
+            height="747"
+            class="amazon__image"
+          />
         </div>
       </section>
       <section class="features">
@@ -201,9 +208,11 @@
             and working from every part of your home.
           </p>
           <img
+            srcset="./images/man.jpg 1x, ./images/man@2x.jpg 2x"
             src="./images/man.jpg"
             alt="man"
             width="1008"
+            height="569"
             class="home__image"
           />
         </div>
@@ -220,9 +229,14 @@
             See how it works
           </button>
           <img
+            srcset="
+              ./images/house-transparent.png    1x,
+              ./images/house-transparent@2x.png 2x
+            "
             src="./images/house-transparent.png"
             alt="house transparent"
             width="666"
+            height="304"
             class="true-mesh_image"
           />
         </div>
@@ -280,6 +294,7 @@
           <h2 class="people__title">Turns out, people love great wifi.</h2>
           <div class="people__box">
             <img
+              srcset="./images/family.jpg 1x, ./images/family@2x.jpg 2x"
               src="./images/family.jpg"
               alt="family"
               width="720"
@@ -364,40 +379,102 @@
           </ul>
         </div>
       </section>
-      <section>
-        <h2>Stay connected with fast, reliable, whole-home wifi.</h2>
-        <button type="button">goodbye dead spots</button>
+      <section class="wifi">
+        <div class="container">
+          <h2 class="wifi__title">
+            Stay connected with fast, reliable, whole-home wifi.
+          </h2>
+          <button type="button" class="button wifi__button">
+            goodbye dead spots
+          </button>
+        </div>
       </section>
     </main>
-    <footer>
-      <ul>
-        <li><a href="">Products</a></li>
-        <li><a href="">How it works</a></li>
-        <li><a href="">Technology</a></li>
-        <li><a href="">eero Secure</a></li>
-        <li><a href="">Support</a></li>
-        <li><a href="">Find Your System</a></li>
-        <li><a href="">Cookie preferences</a></li>
-      </ul>
-      <ul>
-        <li><a href="">Shop</a></li>
-        <li><a href="">Careers</a></li>
-        <li><a href="">Blog</a></li>
-        <li><a href="">Media room</a></li>
-        <li><a href="">Legal</a></li>
-        <li><a href="">Custom installer</a></li>
-        <li><a href="">Where to buy</a></li>
-        <li><a href="">eero for Service Providers</a></li>
-      </ul>
-      <h2>Connect with us</h2>
-      <p>For the latest eero news and promotions.</p>
-      <form action="">
-        <label for="">
-          <input type="text" placeholder="Email" />
-        </label>
-        <button type="submit">Submit</button>
-      </form>
-      <p>&copy; 2021 EERO LLC, SAN FRANCISCO, CA</p>
+    <footer class="footer">
+      <div class="container">
+        <a href="#">
+          <svg width="86" height="39">
+            <use href="./images/symbol-defs.svg#icon-footer-logo"></use></svg
+        ></a>
+        <div class="footer__box">
+          <div class="footer__thumb">
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">Products</a></li>
+              <li><a href="#" class="footer__link">How it works</a></li>
+              <li><a href="#" class="footer__link">Technology</a></li>
+              <li><a href="#" class="footer__link">eero Secure</a></li>
+              <li><a href="#" class="footer__link">Support</a></li>
+              <li><a href="#" class="footer__link">Find Your System</a></li>
+              <li><a href="#" class="footer__link">Cookie preferences</a></li>
+            </ul>
+            <ul class="footer__list">
+              <li><a href="#" class="footer__link">Shop</a></li>
+              <li><a href="#" class="footer__link">Careers</a></li>
+              <li><a href="#" class="footer__link">Blog</a></li>
+              <li><a href="#" class="footer__link">Media room</a></li>
+              <li><a href="#" class="footer__link">Legal</a></li>
+              <li><a href="#" class="footer__link">Custom installer</a></li>
+              <li><a href="#" class="footer__link">Where to buy</a></li>
+              <li>
+                <a href="#" class="footer__link">eero for Service Providers</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__form">
+            <h2 class="footer__title">Connect with us</h2>
+            <p class="footer__text">For the latest eero news and promotions.</p>
+            <form class="form">
+              <label>
+                <input
+                  type="email"
+                  class="form__input"
+                  name="email"
+                  placeholder="Email"
+              /></label>
+              <button type="submit" class="form__button">Submit</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer__soc">
+          <p class="footer__label">&copy; 2021 EERO LLC, SAN FRANCISCO, CA</p>
+          <ul class="social">
+            <li class="social__item">
+              <a href="#" class="social__link"
+                ><svg width="30" height="30" class="social__icon">
+                  <use href="./images/symbol-defs.svg#icon-facebook"></use></svg
+              ></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link"
+                ><svg width="30" height="30" class="social__icon">
+                  <use
+                    href="./images/symbol-defs.svg#icon-instagram-new"
+                  ></use></svg
+              ></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link"
+                ><svg width="30" height="30" class="social__icon">
+                  <use href="./images/symbol-defs.svg#icon-linkedin"></use></svg
+              ></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link"
+                ><svg width="30" height="30" class="social__icon">
+                  <use
+                    href="./images/symbol-defs.svg#icon-pinterest"
+                  ></use></svg
+              ></a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link"
+                ><svg width="30" height="30" class="social__icon">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

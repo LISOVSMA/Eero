@@ -2,7 +2,9 @@
   position: relative;
   padding-top: 120px;
   padding-bottom: 367px;
+  margin: 0 auto;
   text-align: center;
+  max-width: 1440px;
   background-image: url("../images/hero.jpg");
   @include retina {
     background-image: url("../images/hero@2x.jpg");

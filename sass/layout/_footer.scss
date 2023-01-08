@@ -1,0 +1,122 @@
+.footer {
+  padding-top: 90px;
+  padding-bottom: 100px;
+  background-color: var(--secondary-background-color);
+  color: var(--secondary-text-color);
+
+  & .container {
+    padding-right: 190px;
+    padding-left: 190px;
+  }
+
+  &__box {
+    display: flex;
+    gap: 93px;
+    margin-top: 57px;
+    margin-bottom: 52px;
+  }
+
+  &__thumb {
+    display: flex;
+    gap: 92px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__link {
+    @include font(400, 18px, 25px, null);
+  }
+
+  &__title {
+    margin-bottom: 1px;
+    @include font(400, 36px, 48px, null);
+  }
+
+  &__text {
+    margin-bottom: 69px;
+    @include font(400, 18px, 25px, null);
+  }
+
+  &__soc {
+    display: flex;
+    align-items: baseline;
+  }
+
+  &__label {
+    margin-right: 277px;
+    bottom: 0;
+  }
+}
+
+.form {
+  @include flex-align-justify;
+  &__input {
+    width: 293px;
+    height: 53px;
+    margin-right: 28px;
+    padding-top: 22px;
+    padding-bottom: 14px;
+    @include font(400, 14px, 17px, null);
+    cursor: pointer;
+    background-color: var(--secondary-background-color);
+    border: none;
+    border-bottom: 1px solid var(--primary-background-color);
+    color: var(--secondary-text-color);
+    transition: border-color 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+      outline: none;
+      border-color: var(--accent-color);
+    }
+    &::placeholder {
+      @include font(400, 14px, 17px, null);
+      color: var(--placeholder-color);
+    }
+  }
+
+  &__button {
+    padding-top: 17px;
+    padding-bottom: 19px;
+    padding-left: 69px;
+    padding-right: 69px;
+    width: 191px;
+    height: 53px;
+    background-color: var(--secondary-background-color);
+    color: var(--secondary-text-color);
+    @include font(400, 14px, 17px, null);
+    border: 1px solid var(--primary-background-color);
+    transition: border-color 250ms var(--timing-function),
+      color 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+      border-color: var(--accent-color);
+    }
+  }
+}
+
+.social {
+  @include flex-align-justify;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 27px;
+    }
+  }
+
+  &__link {
+    @include flex-align-justify;
+    width: 100%;
+    height: 100%;
+    fill: var(--primary-background-color);
+    transition: fill 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+    }
+  }
+}

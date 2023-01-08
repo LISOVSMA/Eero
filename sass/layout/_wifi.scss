@@ -1,0 +1,35 @@
+.wifi {
+  padding-top: 111px;
+  padding-bottom: 114px;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-image: url("../images/pre-footer.jpg");
+  @include retina {
+    background-image: url("../images/pre-footer@2x.jpg");
+  }
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  &__title {
+    width: 596px;
+    margin: 0 auto;
+    margin-bottom: 83px;
+    color: var(--secondary-text-color);
+    @include font(400, 50px, 60px, null);
+  }
+
+  &__button {
+    display: block;
+    margin: 0 auto;
+    padding-top: 17px;
+    padding-right: 37px;
+    padding-bottom: 21px;
+    padding-left: 37px;
+    transition: background-color 250ms var(--timing-function);
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
+}
